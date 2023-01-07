@@ -17,7 +17,7 @@ const config = {
 		},
 		adapter: adapter({
 			strict: true,
-			precompress: true
+			//precompress: true
 		})
 	}
 };

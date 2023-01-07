@@ -7,9 +7,10 @@
 
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 
 	// pass these to customize the navbar (these are defaults)
-	export let logo = '/logo.svg';
+	export let logo = base + '/logo.svg';
 	export let appName = 'Planner';
 	export let navLinks: NavLink[] = [{ text: 'Home', link: '/' }];
 </script>
@@ -19,7 +20,7 @@
 		class="container mx-auto flex flex-col items-center justify-center sm:flex-row sm:justify-between"
 	>
 		<div class="px-2 sm:px-4">
-			<a href="/" class="flex items-center">
+			<a href={base} class="flex items-center">
 				<img src={logo} class="mr-3 h-6 sm:h-9 2xl:h-11" alt={appName + ' Logo'} />
 				<span class="self-center whitespace-nowrap text-xl font-semibold 2xl:text-2xl"
 					>{appName}</span
@@ -31,7 +32,7 @@
 		>
 			{#each navLinks as navLink}
 				<li class="hover:text-orange-500">
-					<a href={navLink.link} class:current_page={$page.route.id == navLink.link}>
+					<a href="{base}{navLink.link}" class:current_page={$page.route.id == navLink.link}>
 						{navLink.text}
 					</a>
 					<style>
