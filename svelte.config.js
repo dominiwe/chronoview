@@ -13,7 +13,7 @@ const config = {
 	kit: {
 		//adapter: adapter()
 		paths: {
-			base: dev ? '' : '/sk-planner',
+			base: dev ? '' : '/planner',
 		},
 		adapter: adapter({
 			strict: true,
