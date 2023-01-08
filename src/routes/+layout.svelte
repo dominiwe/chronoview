@@ -1,8 +1,7 @@
 <script lang="ts">
 	import '../app.css';
-	import '$lib/comp/NavBar.svelte';
-	import NavBar, { type NavLink } from '$lib/comp/NavBar.svelte';
-	import Container from '$lib/comp/Container.svelte';
+	import { NavBar, Container, Footer } from '$lib/components';
+	import type { NavLink } from '$lib/components/NavBar.svelte';
 
 	const navLinks: NavLink[] = [
 		{ text: 'Home', link: '/' },
@@ -11,8 +10,12 @@
 	];
 </script>
 
-<NavBar {navLinks} />
-
-<Container>
-	<slot />
-</Container>
+<div class="flex h-screen flex-col justify-between">
+	<header><NavBar {navLinks} /></header>
+	<main class="grow">
+		<Container>
+			<slot />
+		</Container>
+	</main>
+	<footer><Footer /></footer>
+</div>

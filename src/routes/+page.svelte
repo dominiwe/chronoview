@@ -1,12 +1,5 @@
 <script lang="ts">
-	import Calendar from '@event-calendar/core';
-	import TimeGrid from '@event-calendar/time-grid';
-
-	let plugins = [TimeGrid];
-	let options = {
-		view: 'timeGridWeek',
-		events: []
-	};
+	import { CalendarWrapper } from '$lib/components';
 </script>
 
-<!-- <Calendar {plugins} {options} /> -->
+<CalendarWrapper />

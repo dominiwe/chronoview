@@ -31,16 +31,13 @@
 			class="mt-0 flex flex-row space-x-8 p-2 text-base font-medium sm:p-4 2xl:gap-10 2xl:text-xl"
 		>
 			{#each navLinks as navLink}
-				<li class="hover:text-orange-500">
-					<a href="{base}{navLink.link}" class:current_page={$page.route.id == navLink.link}>
-						{navLink.text}
-					</a>
-					<style>
-						/* could be done with tailwind but this is more readable */
-						a.current_page::after {
-							content: ' ∙';
-						}
-					</style>
+				<li class="hover:text-slate-600">
+					<div>
+						<a href="{base}{navLink.link}">
+							{navLink.text}
+						</a>
+						<span class={$page.route.id != navLink.link ? 'invisible' : ''}>∙</span>
+					</div>
 				</li>
 			{/each}
 		</ul>
