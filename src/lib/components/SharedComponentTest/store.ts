@@ -1,23 +1,22 @@
 import { writable } from "svelte/store";
 import { browser } from "$app/environment";
 
-let stored = 0;
-console.log("first", stored);
-
-// get count from localstorage
-if (browser) {
-    const retreived = parseInt(localStorage.counter);   
-    if (retreived && !Number.isNaN(retreived)) {
-        stored = retreived;
+const defaultValue = 0;
+const initialValue = (() => {
+    if (browser) {
+        const retreived = parseInt(localStorage.count);
+        if (!Number.isNaN(retreived)) {
+            return retreived;
+        }
     }
-    console.log("second", stored);
-}
+    return defaultValue;
+})();
 
-// sane default 0
-export const count = writable(stored);
+export const count = writable<number>(initialValue);
 
 // update localstorage when store updates
-if (browser) {
-    count.subscribe((value) => localStorage.count = value);
-    console.log("third", stored);
-}
+count.subscribe((value) => {
+    if (browser) {
+        localStorage.count = value   
+    }
+});
