@@ -5,18 +5,20 @@
 		<link rel="icon" href="/planner/favicon.webp" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="/planner/_app/immutable/assets/_layout-ac549eb8.css" rel="stylesheet">
-		<link href="/planner/_app/immutable/assets/index-fc0256b7.css" rel="stylesheet">
-		<link rel="modulepreload" href="/planner/_app/immutable/start-ae650cf0.js">
+		<link href="/planner/_app/immutable/assets/_layout-ee2e88c2.css" rel="stylesheet">
+		<link href="/planner/_app/immutable/assets/db-fc0256b7.css" rel="stylesheet">
+		<link rel="modulepreload" href="/planner/_app/immutable/start-a9a56b56.js">
 		<link rel="modulepreload" href="/planner/_app/immutable/chunks/index-8f987bdd.js">
 		<link rel="modulepreload" href="/planner/_app/immutable/chunks/singletons-57140ab7.js">
 		<link rel="modulepreload" href="/planner/_app/immutable/chunks/index-fff3fd2f.js">
-		<link rel="modulepreload" href="/planner/_app/immutable/components/pages/_layout.svelte-9283c8d8.js">
+		<link rel="modulepreload" href="/planner/_app/immutable/components/pages/_layout.svelte-277366bf.js">
 		<link rel="modulepreload" href="/planner/_app/immutable/chunks/Link-a35ec4c1.js">
+		<link rel="modulepreload" href="/planner/_app/immutable/chunks/db-456e8bcb.js">
 		<link rel="modulepreload" href="/planner/_app/immutable/chunks/stores-5a5be50e.js">
 		<link rel="modulepreload" href="/planner/_app/immutable/modules/pages/_layout.ts-55770e65.js">
 		<link rel="modulepreload" href="/planner/_app/immutable/chunks/_layout-025914ab.js">
-		<link rel="modulepreload" href="/planner/_app/immutable/components/pages/_page.svelte-f97239d7.js">
+		<link rel="modulepreload" href="/planner/_app/immutable/components/pages/_page.svelte-7b09eedf.js">
+		<link rel="modulepreload" href="/planner/_app/immutable/chunks/SharedComponentTest-3bced5fd.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -31,7 +33,13 @@
 				</li><li class="hover:text-slate-600"><div><a href="/planner/about">About</a>
 						<span class="invisible">∙</span></div>
 				</li></ul></div></nav></header>
-	<main class="grow"><div class="px-2 pb-3 sm:px-4 sm:pb-5 md:pb-7 xl:container xl:mx-auto xl:px-5"><div class="ec" style="height: auto"><div class="ec-toolbar"><div><h2 class="ec-title">Jan 8 - 14, 2023</h2>
+	<main class="grow"><div class="px-2 pb-3 sm:px-4 sm:pb-5 md:pb-7 xl:container xl:mx-auto xl:px-5"><div class="m-auto flex justify-around"><div class="flex flex-col gap-5"><button class="border-2 px-2">+ </button>
+		<div><p>0</p></div>
+		<button class="border-2 px-2">- </button></div></div>
+
+
+
+<div class="ec" style="height: auto"><div class="ec-toolbar"><div><h2 class="ec-title">Jan 8 - 14, 2023</h2>
         </div><div>
         </div><div><button class="ec-button ec-today" disabled>today</button><div class="ec-button-group"><button class="ec-button ec-prev"><i class="ec-icon ec-prev"></i></button><button class="ec-button ec-next"><i class="ec-icon ec-next"></i></button>
                     </div>
@@ -44,7 +52,7 @@
 <div class="ec-all-day"><div class="ec-sidebar"><div class="ec-sidebar-title"></div>
         <div class="ec-hidden-times"><div class="ec-time"></div><div class="ec-time"></div><div class="ec-time">1:00 AM</div><div class="ec-time"></div><div class="ec-time">2:00 AM</div><div class="ec-time"></div><div class="ec-time">3:00 AM</div><div class="ec-time"></div><div class="ec-time">4:00 AM</div><div class="ec-time"></div><div class="ec-time">5:00 AM</div><div class="ec-time"></div><div class="ec-time">6:00 AM</div><div class="ec-time"></div><div class="ec-time">7:00 AM</div><div class="ec-time"></div><div class="ec-time">8:00 AM</div><div class="ec-time"></div><div class="ec-time">9:00 AM</div><div class="ec-time"></div><div class="ec-time">10:00 AM</div><div class="ec-time"></div><div class="ec-time">11:00 AM</div><div class="ec-time"></div><div class="ec-time">12:00 PM</div><div class="ec-time"></div><div class="ec-time">1:00 PM</div><div class="ec-time"></div><div class="ec-time">2:00 PM</div><div class="ec-time"></div><div class="ec-time">3:00 PM</div><div class="ec-time"></div><div class="ec-time">4:00 PM</div><div class="ec-time"></div><div class="ec-time">5:00 PM</div><div class="ec-time"></div><div class="ec-time">6:00 PM</div><div class="ec-time"></div><div class="ec-time">7:00 PM</div><div class="ec-time"></div><div class="ec-time">8:00 PM</div><div class="ec-time"></div><div class="ec-time">9:00 PM</div><div class="ec-time"></div><div class="ec-time">10:00 PM</div><div class="ec-time"></div><div class="ec-time">11:00 PM</div><div class="ec-time"></div></div></div>
     <div class="ec-days"><div class="ec-lines"></div>
-        <div class="ec-day ec-today">
+        <div class="ec-day">
     
     <div class="ec-events"></div></div><div class="ec-day">
     
@@ -52,7 +60,7 @@
     
     <div class="ec-events"></div></div><div class="ec-day">
     
-    <div class="ec-events"></div></div><div class="ec-day">
+    <div class="ec-events"></div></div><div class="ec-day ec-today">
     
     <div class="ec-events"></div></div><div class="ec-day">
     
@@ -63,7 +71,7 @@
 <div class="ec-body"><div class="ec-content"><div class="ec-sidebar"><div class="ec-sidebar-title"></div>
             <div class="ec-time"></div><div class="ec-time"></div><div class="ec-time">1:00 AM</div><div class="ec-time"></div><div class="ec-time">2:00 AM</div><div class="ec-time"></div><div class="ec-time">3:00 AM</div><div class="ec-time"></div><div class="ec-time">4:00 AM</div><div class="ec-time"></div><div class="ec-time">5:00 AM</div><div class="ec-time"></div><div class="ec-time">6:00 AM</div><div class="ec-time"></div><div class="ec-time">7:00 AM</div><div class="ec-time"></div><div class="ec-time">8:00 AM</div><div class="ec-time"></div><div class="ec-time">9:00 AM</div><div class="ec-time"></div><div class="ec-time">10:00 AM</div><div class="ec-time"></div><div class="ec-time">11:00 AM</div><div class="ec-time"></div><div class="ec-time">12:00 PM</div><div class="ec-time"></div><div class="ec-time">1:00 PM</div><div class="ec-time"></div><div class="ec-time">2:00 PM</div><div class="ec-time"></div><div class="ec-time">3:00 PM</div><div class="ec-time"></div><div class="ec-time">4:00 PM</div><div class="ec-time"></div><div class="ec-time">5:00 PM</div><div class="ec-time"></div><div class="ec-time">6:00 PM</div><div class="ec-time"></div><div class="ec-time">7:00 PM</div><div class="ec-time"></div><div class="ec-time">8:00 PM</div><div class="ec-time"></div><div class="ec-time">9:00 PM</div><div class="ec-time"></div><div class="ec-time">10:00 PM</div><div class="ec-time"></div><div class="ec-time">11:00 PM</div><div class="ec-time"></div></div>
         <div class="ec-days"><div class="ec-lines"><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div><div class="ec-line"></div></div>
-            <div class="ec-day ec-today"><div class="ec-bg-events"></div>
+            <div class="ec-day"><div class="ec-bg-events"></div>
     <div class="ec-events">
         
         
@@ -91,7 +99,7 @@
         
         </div>
     <div class="ec-extra">
-        </div></div><div class="ec-day"><div class="ec-bg-events"></div>
+        </div></div><div class="ec-day ec-today"><div class="ec-bg-events"></div>
     <div class="ec-events">
         
         
@@ -124,14 +132,14 @@
 				<a href="/planner/about" class="text-indigo-600 hover:text-indigo-500 visited:text-indigo-800">here</a><span>.</span></li></ul></div></div></footer></div>
 
 
-		<script type="module" data-sveltekit-hydrate="167341m">
-			import { start } from "/planner/_app/immutable/start-ae650cf0.js";
+		<script type="module" data-sveltekit-hydrate="6srlfb">
+			import { start } from "/planner/_app/immutable/start-a9a56b56.js";
 
 			start({
 				env: {},
 				paths: {"base":"/planner","assets":"/planner"},
-				target: document.querySelector('[data-sveltekit-hydrate="167341m"]').parentNode,
-				version: "1673186931553",
+				target: document.querySelector('[data-sveltekit-hydrate="6srlfb"]').parentNode,
+				version: "1673530098557",
 				hydrate: {
 					node_ids: [0, 2],
 					data: [null,null],
