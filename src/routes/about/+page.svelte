@@ -31,10 +31,9 @@
 			<Link href="https://tailwindcss.com/">Tailwind</Link>,
 			<Link href="https://github.com/vkurko/calendar">Event Calendar</Link> and
 			<Link href="https://observablehq.com/@observablehq/plot">Plot</Link>.<br /> It uses SvelteKit
-			in <Link href="https://github.com/sveltejs/kit/tree/master/packages/adapter-static#spa-mode"
-				>SPA mode</Link
-			> (only) in order to be easily deployed to Github Pages. Because of that, JavaScript needs to be
-			enabled! However, this app would technically work just fine using SvelteKits SSG/SSR approach instead.
+			with <Link href="https://github.com/sveltejs/kit/tree/master/packages/adapter-static"
+				>adapter-static</Link
+			> in order to work with Github Pages.
 		</p>
 	</div>
 	<div>
