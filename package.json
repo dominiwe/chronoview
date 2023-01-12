@@ -47,5 +47,9 @@
 		"vite": "^4.0.0",
 		"vitest": "^0.25.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@observablehq/plot": "^0.6.1",
+		"dexie": "^3.2.2"
+	}
 }

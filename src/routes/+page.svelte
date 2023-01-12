@@ -1,5 +1,9 @@
 <script lang="ts">
-	import { CalendarWrapper } from '$lib/components';
+	import { CalendarWrapper, DexieTest, SharedComponentTest } from '$lib/components';
 </script>
+
+<SharedComponentTest />
+
+<!--<DexieTest />-->
 
 <CalendarWrapper />
