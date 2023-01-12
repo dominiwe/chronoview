@@ -5,78 +5,22 @@
 		<link rel="icon" href="/planner/favicon.webp" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="/planner/_app/immutable/assets/_layout-ee2e88c2.css" rel="stylesheet">
-		<link href="/planner/_app/immutable/assets/db-fc0256b7.css" rel="stylesheet">
-		<link rel="modulepreload" href="/planner/_app/immutable/start-a9a56b56.js">
+		<link rel="modulepreload" href="/planner/_app/immutable/start-c0542147.js">
 		<link rel="modulepreload" href="/planner/_app/immutable/chunks/index-8f987bdd.js">
 		<link rel="modulepreload" href="/planner/_app/immutable/chunks/singletons-57140ab7.js">
 		<link rel="modulepreload" href="/planner/_app/immutable/chunks/index-fff3fd2f.js">
-		<link rel="modulepreload" href="/planner/_app/immutable/components/pages/_layout.svelte-277366bf.js">
-		<link rel="modulepreload" href="/planner/_app/immutable/chunks/Link-a35ec4c1.js">
-		<link rel="modulepreload" href="/planner/_app/immutable/chunks/db-456e8bcb.js">
-		<link rel="modulepreload" href="/planner/_app/immutable/chunks/stores-5a5be50e.js">
-		<link rel="modulepreload" href="/planner/_app/immutable/modules/pages/_layout.ts-55770e65.js">
-		<link rel="modulepreload" href="/planner/_app/immutable/chunks/_layout-025914ab.js">
-		<link rel="modulepreload" href="/planner/_app/immutable/components/pages/about/_page.svelte-340ffa41.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
-
-
-<div class="flex h-screen flex-col justify-between"><header><nav class="px-2 py-2.5 sm:px-4"><div class="container mx-auto flex flex-col items-center justify-center sm:flex-row sm:justify-between"><div class="px-2 sm:px-4"><a href="/planner" class="flex items-center"><img src="/planner/logo.svg" class="mr-3 h-6 sm:h-9 2xl:h-11" alt="Planner Logo">
-				<span class="self-center whitespace-nowrap text-xl font-semibold 2xl:text-2xl">Planner</span></a></div>
-		<ul class="mt-0 flex flex-row space-x-8 p-2 text-base font-medium sm:p-4 2xl:gap-10 2xl:text-xl"><li class="hover:text-slate-600"><div><a href="/planner/">Home</a>
-						<span class="invisible">∙</span></div>
-				</li><li class="hover:text-slate-600"><div><a href="/planner/config">Config</a>
-						<span class="invisible">∙</span></div>
-				</li><li class="hover:text-slate-600"><div><a href="/planner/about">About</a>
-						<span class="">∙</span></div>
-				</li></ul></div></nav></header>
-	<main class="grow"><div class="px-2 pb-3 sm:px-4 sm:pb-5 md:pb-7 xl:container xl:mx-auto xl:px-5"><div class="mx-auto max-w-4xl rounded-xl bg-slate-100 p-4"><h1 class="hidden text-lg font-medium sm:text-lg">About</h1>
-	<div><h2 class="text-lg font-medium sm:text-lg">What is this?</h2>
-		<p>The main purpose of this tool is to visualize time tracking and planning information. It can
-			interact with different tools called <span class="italic">connectors</span> using their APIs and
-			visualize gathered data.
-		</p></div>
-	<div><h2 class="text-lg font-medium sm:text-lg">How does it work?</h2>
-		<p>This app runs client-side in the browser and stores data locally using
-			<a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API" class="text-indigo-600 hover:text-indigo-500 visited:text-indigo-800">IndexedDB</a>.
-			It is built with <a href="https://kit.svelte.dev/" class="text-indigo-600 hover:text-indigo-500 visited:text-indigo-800">SvelteKit</a>,
-			<a href="https://tailwindcss.com/" class="text-indigo-600 hover:text-indigo-500 visited:text-indigo-800">Tailwind</a>,
-			<a href="https://github.com/vkurko/calendar" class="text-indigo-600 hover:text-indigo-500 visited:text-indigo-800">Event Calendar</a> and
-			<a href="https://observablehq.com/@observablehq/plot" class="text-indigo-600 hover:text-indigo-500 visited:text-indigo-800">Plot</a>. It is not an SPA but
-			rather a static site which happens to manage and share state with IndexedDB.
-		</p></div>
-	<div><h2 class="text-lg font-medium sm:text-lg">Which connectors are supported?</h2>
-		<p>Currently supported:</p>
-		<ul class="ml-5 list-disc"><li>None</li></ul>
-		<p>Support planned:</p>
-		<ul class="ml-5 list-disc"><li>ActivityWatch (in Development)</li><li>Clockify</li><li>OpenProject</li><li>SAP</li><li>Outlook</li></ul></div>
-	<div class="mt-2 border-t-2 pt-1"><h2 class="text-lg font-medium sm:text-lg">Version Information</h2>
-		<div class="flex justify-between"><div class="flex flex-col justify-center"><div><p>Loading...</p></div></div>
-	<div class="ml-2"><button class="rounded bg-slate-300 p-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-slate-500 motion-safe:animate-spin"><path fill-rule="evenodd" d="M4.755 10.059a7.5 7.5 0 0112.548-3.364l1.903 1.903h-3.183a.75.75 0 100 1.5h4.992a.75.75 0 00.75-.75V4.356a.75.75 0 00-1.5 0v3.18l-1.9-1.9A9 9 0 003.306 9.67a.75.75 0 101.45.388zm15.408 3.352a.75.75 0 00-.919.53 7.5 7.5 0 01-12.548 3.364l-1.902-1.903h3.183a.75.75 0 000-1.5H2.984a.75.75 0 00-.75.75v4.992a.75.75 0 001.5 0v-3.18l1.9 1.9a9 9 0 0015.059-4.035.75.75 0 00-.53-.918z" clip-rule="evenodd"></path></svg></button></div></div></div></div></div></main>
-	<footer><div class="flex justify-center bg-slate-100 px-4 py-3"><div class="text-center"><ul><li><span>Created by </span><a href="https://github.com/dominiwe" class="text-indigo-600 hover:text-indigo-500 visited:text-indigo-800">dominiwe</a>
-				<span>in 2023.</span></li>
-			<li><span>Source code available</span>
-				<a href="https://github.com/dominiwe/planner" class="text-indigo-600 hover:text-indigo-500 visited:text-indigo-800">here</a><span>. More info</span>
-				<a href="/planner/about" class="text-indigo-600 hover:text-indigo-500 visited:text-indigo-800">here</a><span>.</span></li></ul></div></div></footer></div>
-
-
-		<script type="module" data-sveltekit-hydrate="wf0k4h">
-			import { start } from "/planner/_app/immutable/start-a9a56b56.js";
+		<script type="module" data-sveltekit-hydrate="45h">
+			import { start } from "/planner/_app/immutable/start-c0542147.js";
 
 			start({
 				env: {},
 				paths: {"base":"/planner","assets":"/planner"},
-				target: document.querySelector('[data-sveltekit-hydrate="wf0k4h"]').parentNode,
-				version: "1673530098557",
-				hydrate: {
-					node_ids: [0, 3],
-					data: [null,null],
-					form: null
-				}
+				target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
+				version: "1673530623538"
 			});
-		</script>
-	</div>
+		</script></div>
 	</body>
 </html>
