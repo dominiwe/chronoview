@@ -50,6 +50,7 @@
 	"type": "module",
 	"dependencies": {
 		"@observablehq/plot": "^0.6.1",
+		"aw-client": "^0.3.3",
 		"dexie": "^3.2.2"
 	}
 }
