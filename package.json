@@ -1,5 +1,5 @@
 {
-	"name": "planner",
+	"name": "chronoview",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -50,6 +50,7 @@
 	"type": "module",
 	"dependencies": {
 		"@observablehq/plot": "^0.6.1",
+		"@tauri-apps/api": "^1.2.0",
 		"aw-client": "^0.3.3",
 		"dexie": "^3.2.2"
 	}

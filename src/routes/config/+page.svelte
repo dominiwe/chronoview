@@ -2,4 +2,4 @@
 	import { SharedComponentTest } from '$lib/components';
 </script>
 
-<SharedComponentTest />
+<!-- <SharedComponentTest /> -->

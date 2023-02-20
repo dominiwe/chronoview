@@ -5,7 +5,7 @@
 	export let creatorName = 'dominiwe';
 	export let creatorLink = 'https://github.com/dominiwe';
 	export let year = 2023;
-	export let sourceLink = 'https://github.com/dominiwe/planner';
+	export let sourceLink = 'https://github.com/dominiwe/chronoview';
 	export let aboutLink = base + '/about';
 </script>
 

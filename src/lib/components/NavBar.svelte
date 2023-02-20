@@ -11,7 +11,7 @@
 
 	// pass these to customize the navbar (these are defaults)
 	export let logo = base + '/logo.svg';
-	export let appName = 'Planner';
+	export let appName = 'ChronoView';
 	export let navLinks: NavLink[] = [{ text: 'Home', link: '/' }];
 </script>
 

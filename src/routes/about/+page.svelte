@@ -2,13 +2,12 @@
 	import { Link, LatestGithubCommit } from '$lib/components';
 
 	type Connector = { text: string; link?: string };
-	const supportedConnectors: Connector[] = [{ text: 'None' }];
+	const supportedConnectors: Connector[] = [{ text: 'ActivityWatch (WIP)' }];
 	const plannedConnectors: Connector[] = [
-		{ text: 'ActivityWatch (in Development)' },
 		{ text: 'Clockify' },
 		{ text: 'OpenProject' },
-		{ text: 'SAP' },
-		{ text: 'Outlook' }
+		{ text: 'SAP' }
+		/*{ text: 'Outlook' }*/
 	];
 </script>
 
@@ -17,9 +16,9 @@
 	<div>
 		<h2 class="text-lg font-medium sm:text-lg">What is this?</h2>
 		<p>
-			The main purpose of this tool is to visualize time tracking and planning information. It can
-			interact with different tools called <span class="italic">connectors</span> using their APIs and
-			visualize gathered data.
+			The main purpose of this tool is to visualize time tracking data. It can interact with
+			different tools called <span class="italic">connectors</span> using their APIs in order to visualize
+			gathered data.
 		</p>
 	</div>
 	<div>
@@ -33,7 +32,7 @@
 			<Link href="https://observablehq.com/@observablehq/plot">Plot</Link>.<br /> It uses SvelteKit
 			with <Link href="https://github.com/sveltejs/kit/tree/master/packages/adapter-static"
 				>adapter-static</Link
-			> in order to work with Github Pages.
+			> in order to be deployable to Github Pages.
 		</p>
 	</div>
 	<div>
